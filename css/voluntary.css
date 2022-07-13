@@ -86,18 +86,15 @@ nav:hover{
 }
 /* -------Above up are the same code in main.css----------------- */
 .grinder{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height:250px;
-    overflow: hidden;  
+    display: flex;
+    justify-content: center;
 }
-/* cropping image */
-.grinder img{
-    max-height: 260px;
-    margin: -20px 0px 0px -90px; 
+
+
+.coffee img{
+    max-height: 500px;
 }
+
 
 .information{
     background-color: rgb(106, 149, 126);
@@ -136,7 +133,7 @@ footer img{
 }
 /* ---------set new navbar for desktop version, same code as main.css--------------- */
 @media screen and (min-width:760px){
-    img{
+    .coffee img{
         border-radius: 20px;
     }
     

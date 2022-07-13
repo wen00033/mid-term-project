@@ -28,7 +28,7 @@
             </div>
         </header>
         <div class="clearfix">
-            <nav role="navigation">
+            <nav>
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -43,7 +43,29 @@
         <!-- just simple list element on mobile version -->
         <h1>Contact</h1>
         <div class="girlimg">
-            <img src="images/pexels-tuấn-kiệt-jr-1382731.jpg" alt="girlimg">
+            <picture>
+                <source srcset="
+                images/girl/girl-960_x_1440.jpg,
+                images/girl/girl-1920_x_2880.jpg 2x,
+                images/girl/girl-2880_x_4320.jpg 3x" media="(min-width:960px)">
+                <!-- media query max-width 960px -->
+                <source srcset="
+                images/girl/girl-720_x_1080.jpg,
+                images/girl/girl-1440_x_2160.jpg 2x,
+                images/girl/girl-2160_x_3240.jpg 3x" media="(min-width:720px)">
+          
+                <source srcset="
+                images/girl/girl-480_x_720.jpg,
+                images/girl/girl-960_x_1440.jpg 2x,
+                images/girl/girl-1440_x_2160.jpg 3x" media="(min-width:480px)">
+          
+                <source srcset="
+                images/girl/girl-320_x_480.jpg,
+                images/girl/girl-480_x_720.jpg 2x,
+                images/girl/girl-960_x_1440.jpg 3x" media="(min-width:320px)">
+          
+                <img src="images/girl/girl-320_x_480.jpg" alt="coffee">
+          </picture> 
         </div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam tenetur inventore animi distinctio minima ex alias, temporibus quibusdam eaque facere odit vel assumenda impedit? Voluptates sunt dolorum consequatur maiores quibusdam?</p>
         <h2>Phone number</h2>

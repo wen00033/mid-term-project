@@ -62,7 +62,7 @@ nav{
     padding: 10px;
     opacity: 0%;
 }
-.clearfix{
+.clearfix::after{
     content: "";
     clear: both;
 }
@@ -96,7 +96,7 @@ nav ul li a{
     width: 100%;
 }
 /* set the image on the left side of text */
-#grinder{
+.grinder img{
     margin: 20px;
     width: 50%;
     height: 30%;
@@ -223,9 +223,10 @@ footer img{
         justify-content: center;
     }
     /* adjust image on new layout */
-    #grinder{
+    .grinder img{
         width: 80%;
-        height: 90%;
+        height: auto;
+        float: none;
     }
     .intro h1{
         display: none;

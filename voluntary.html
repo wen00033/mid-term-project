@@ -43,7 +43,29 @@
         <h1>voluntary about our shop</h1>
         <!-- seperate image for cropping in css -->
         <div class="grinder">
-            <img src="images/pexels-tom-swinnen-1309778.jpg" alt="grinder">
+            <picture class="coffee">
+                <source srcset="
+                images/coffee/coffee-960_x_640.jpg,
+                images/coffee/coffee-1920_x_1280.jpg 2x,
+                images/coffee/coffee-2880_x_1920.jpg 3x" media="(min-width:960px)">
+                <!-- media query max-width 960px -->
+                <source srcset="
+                images/coffee/coffee-720_x_479.jpg,
+                images/coffee/coffee-1440_x_960.jpg 2x,
+                images/coffee/coffee-2160_x_1440.jpg 3x" media="(min-width:720px)">
+          
+                <source srcset="
+                images/coffee/coffee-480_x_319.jpg,
+                images/coffee/coffee-960_x_640.jpg 2x,
+                images/coffee/coffee-1440_x_960.jpg 3x" media="(min-width:480px)">
+          
+                <source srcset="
+                images/coffee/coffee-320_x_213.jpg,
+                images/coffee/coffee-640_x_426.jpg 2x,
+                images/coffee/coffee-960_x_640.jpg 3x" media="(min-width:320px)">
+          
+                <img src="images/coffee/coffee-320_x213.jpg" alt="coffee">
+          </picture> 
         </div>
         <div class="information">
             <h2>Information about Voluntary need</h2>

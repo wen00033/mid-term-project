@@ -52,7 +52,29 @@
             <div class="intro">
                  <!--foat the image and clearfix after  -->
                 <div class="clearfix">
-                    <img id="grinder" src="images/pexels-tom-swinnen-1309778.jpg" alt="grinder">
+                    <picture class="grinder">
+                        <source srcset="
+                        images/coffee/coffee-960_x_640.jpg,
+                        images/coffee/coffee-1920_x_1280.jpg 2x,
+                        images/coffee/coffee-2880_x_1920.jpg 3x" media="(min-width:960px)">
+                        <!-- media query max-width 960px -->
+                        <source srcset="
+                        images/coffee/coffee-720_x_479.jpg,
+                        images/coffee/coffee-1440_x_960.jpg 2x,
+                        images/coffee/coffee-2160_x_1440.jpg 3x" media="(min-width:720px)">
+                  
+                        <source srcset="
+                        images/coffee/coffee-480_x_319.jpg,
+                        images/coffee/coffee-960_x_640.jpg 2x,
+                        images/coffee/coffee-1440_x_960.jpg 3x" media="(min-width:480px)">
+                  
+                        <source srcset="
+                        images/coffee/coffee-320_x_213.jpg,
+                        images/coffee/coffee-640_x_426.jpg 2x,
+                        images/coffee/coffee-960_x_640.jpg 3x" media="(min-width:320px)">
+                  
+                        <img src="images/coffee/coffee-320_x213.jpg" alt="coffee">
+                  </picture>                        
                 </div>
                 <div class="content">       
                     <h1>Intro</h1>
@@ -63,7 +85,29 @@
                 <h2>Event</h2>
                 <!-- cropped the second in css as well -->
                 <div class="cropped2">
-                    <img src="images/pexels-wojciech-kumpicki-2071873.jpg" alt="cat">
+                    <picture>
+                        <source srcset="
+                        images/cat/cat-960_x_1442.jpg,
+                        images/cat/cat-1920_x_2884.jpg 2x,
+                        images/cat/cat-2880_x_4327.jpg 3x" media="(min-width:960px)">
+                        <!-- media query max-width 960px -->
+                        <source srcset="
+                        images/cat/cat-720_x_1082.jpg,
+                        images/cat/cat-1440_x_2163.jpg 2x,
+                        images/cat/cat-2160_x_3245.jpg 3x" media="(min-width:720px)">
+                  
+                        <source srcset="
+                        images/cat/cat-480_x_721.jpg,
+                        images/cat/cat-960_x_1442.jpg 2x,
+                        images/cat/cat-1440_x_2163.jpg 3x" media="(min-width:480px)">
+                  
+                        <source srcset="
+                        images/cat/cat-320_x_480.jpg,
+                        images/cat/cat-640_x_962.jpg 2x,
+                        images/cat/cat-960_x_1442.jpg 3x" media="(min-width:320px)">
+                  
+                        <img src="images/cat/cat.jpg" alt="image of museum">
+                  </picture>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugiat debitis, totam id soluta quos sunt velit consequuntur tenetur dolores error quo ut! Ipsam eligendi atque quae eum in temporibus!</p>
             </div>

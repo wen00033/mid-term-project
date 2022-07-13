@@ -98,8 +98,7 @@ nav a:hover{
 }
 .girlimg img{
     height: 500px;
-    margin: -40px 0px 0px 0px;
-    
+    margin: -40px 0px 0px 0px;    
 }
 
 iframe{
@@ -125,9 +124,12 @@ footer img{
     max-width: 100px;
 }
 @media screen and (min-width:760px){
-    img{
-        border-radius: 20px;
+    picture .img{
+        display: flex;
+        justify-content: center;
     }
+        
+    
     
     .navigation{
         width: 100%;
@@ -164,8 +166,10 @@ footer img{
         padding: 9px;
         border: none;
     }
-    .grinder{
+    .girlimg{
         border-radius: 10px;
+        display: flex;
+        justify-content: center;
     }
     .girlimg img{
         height: 400px;
