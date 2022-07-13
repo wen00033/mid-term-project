@@ -1,0 +1,174 @@
+:root{
+    --body-copy-color:rgb(252,220,168);
+    --primary-color:rgb(153,211,180);
+}
+h1,h2,p{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: var(--body-copy-color);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+}
+.cropped{
+    width: 375px;
+    height: 90px;
+    overflow: hidden; 
+} 
+.cropped::after{
+    clear: both;
+    content: "";    
+}
+#logo{
+    max-width: 375px;
+    margin: -50px 0px 0px -100px;
+    float: left;
+}
+
+.icons{
+  opacity: 50%;
+  margin: 20px;
+  white-space: nowrap;  
+}
+i{
+  font-size: 30px;
+  padding: 5px;  
+}
+
+
+header{
+    background-color:rgb(240,145,145);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+.searching{
+    display: none;
+}
+
+nav{
+    background-color: rgb(145,53,53);
+    max-width: 150px;
+    float: right;
+    position: absolute;
+    right:0%;
+    padding: 10px;
+    opacity: 0%;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: auto 0;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(240,145,145)
+}
+.clearfix{
+    content: "";
+    clear: both;
+}
+
+nav:hover{
+    opacity: 100%;
+}
+nav a:hover{
+    color: pink;
+}
+/* -----above up are the same code in main.css------ */
+.girlimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height:250px;
+    overflow: hidden;
+}
+.girlimg img{
+    height: 500px;
+    margin: -40px 0px 0px 0px;
+    
+}
+
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+/* --------The same footer code in main.css without animation----------------------------------- */
+footer{
+    background-color:rgb(106,91,66);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.icons2{
+    float: right;
+}
+
+footer img{
+    max-height: 100px;
+    max-width: 100px;
+}
+@media screen and (min-width:760px){
+    img{
+        border-radius: 20px;
+    }
+    
+    .navigation{
+        width: 100%;
+    }
+    nav{
+        opacity: 100%;
+        justify-content: center;
+        max-width: 100%;
+        float: none;
+        position: inherit;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;    
+    }
+    .icons{
+        display: none;
+    }
+    .searching{
+        display: block;
+        margin: 20px;
+    }
+    input{
+        border-radius: 50px;
+        padding: 5px;
+        width: 250px;
+        border: none;
+    }
+    button{
+        background-color: brown;
+        border-radius: 50px;
+        color: white;
+        padding: 9px;
+        border: none;
+    }
+    .grinder{
+        border-radius: 10px;
+    }
+    .girlimg img{
+        height: 400px;
+        margin: 0px 0px 0px 0px;    
+    }
+}   
