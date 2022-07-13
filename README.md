@@ -1,1 +1,1 @@
-# mid-term-project
+# mtm6201-midterm
